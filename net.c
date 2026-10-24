@@ -79,6 +79,7 @@ net_device_output(struct net_device *dev, uint16_t type, const uint8_t *data, si
         errorf("too long, dev=%s, mtu=%u, len=%zu", dev->name, dev->mtu, len);
         return -1;
     }
+    return 0;
 }
 
 int
